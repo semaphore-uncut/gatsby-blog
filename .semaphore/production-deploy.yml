@@ -20,6 +20,5 @@ blocks:
       jobs:
         - name: Check live website
           commands:
-            - checkout
             - cache restore node-modules-$(checksum package-lock.json),node-modules-
             - npm run nightwatch

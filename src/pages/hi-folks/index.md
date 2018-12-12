@@ -1,5 +1,5 @@
 ---
-title: New Beginnings 123123
+title: New Beginnings II 🧝‍♂️
 date: "2015-05-28T22:40:32.169Z"
 ---
 

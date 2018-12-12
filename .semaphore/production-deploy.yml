@@ -14,7 +14,7 @@ blocks:
           commands:
             - checkout
             - cache restore website-build
-            - aws s3 sync "public" "s3://markoci-gatsby" --acl "public-read"
+            - aws s3 sync "public" "s3://uncut-gatsby" --acl "public-read"
   - name: 🔍 UI tests
     task:
       jobs:

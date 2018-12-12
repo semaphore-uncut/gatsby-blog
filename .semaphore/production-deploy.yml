@@ -13,7 +13,7 @@ blocks:
         - name: Copy to S3
           commands:
             - checkout
-            - cache restore website-build
+            - cache restore website-build-$SEMAPHORE_WORKFLOW_ID
             - aws s3 sync "public" "s3://uncut-gatsby" --acl "public-read"
   - name: 🔍 UI tests
     task:

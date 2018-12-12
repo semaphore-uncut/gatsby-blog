@@ -17,7 +17,7 @@ blocks:
           - cache store node-modules-$(checksum package-lock.json) node_modules
 
 
-  - name: 🧱 Build site
+  - name: 🏋️‍♀️Build site
     task:
       jobs:
       - name: build
@@ -25,7 +25,7 @@ blocks:
           - checkout
           - cache restore node-modules-$(checksum package-lock.json),node-modules-
           - npm run build --prefix-path
-          - cache store website-build public
+          - cache store website-build-$SEMAPHORE_WORKFLOW_ID public
 
 promotions:
   - name: Deploy to production
